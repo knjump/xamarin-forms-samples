@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+<ItemGroup>
+    <EmbeddedResource Remove="**\*.xaml" />
+  </ItemGroup>
+
+<ItemGroup>
+  <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+  <PackageReference Include="Xamarin.CommunityToolkit" Version="1.1.0" />
+  <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+  <PackageReference Include="Xamarin.Forms.Platform.WPF" Version="5.0.0.2012" />
+</ItemGroup>
+
+<ItemGroup>
+  <ProjectReference Include="..\MediaElementDemos\MediaElementDemos.csproj" />
+</ItemGroup>
+
+
+
+</Project>

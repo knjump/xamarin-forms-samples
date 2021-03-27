@@ -12,7 +12,9 @@ namespace MediaElementDemos
 
         protected override async void OnStart()
         {
-            await FileAccess.CopyVideoIfNotExists("XamarinForms101UsingEmbeddedImages.mp4");
+            // figure out how to call a video from the HDD here:
+
+            //await FileAccess.CopyVideoIfNotExists("XamarinForms101UsingEmbeddedImages.mp4");
             MainPage = new NavigationPage(new MainPage());
         }
 

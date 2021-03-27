@@ -12,8 +12,8 @@ namespace MediaElementDemos.Helpers
         // the second line of code.
         public static async Task CopyVideoIfNotExists(string filename)
         {
-            string folder = FileSystem.AppDataDirectory;
-            //string folder = Path.GetTempPath();
+            //string folder = FileSystem.AppDataDirectory;
+            string folder = Path.GetTempPath();
             string videoFile = Path.Combine(folder, "XamarinVideo.mp4");
 
             if (!File.Exists(videoFile))
